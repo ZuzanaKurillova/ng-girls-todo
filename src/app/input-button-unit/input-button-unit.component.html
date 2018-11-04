@@ -1,0 +1,7 @@
+<p>
+  The title is: {{ title }}
+</p>
+
+<input class="todo-input" #inputElementRef [value]="title" (keyup.enter)="changeTitleEvent($event)">
+
+<button class="btn" (click)="submitValue(inputElementRef.value)">Save</button>
